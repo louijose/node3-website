@@ -1,6 +1,3 @@
-console.log('client side javacript')
-
-
 
 
 const weatherform = document.querySelector('form')
