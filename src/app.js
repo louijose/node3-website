@@ -7,6 +7,8 @@ console.log(__dirname)
 console.log(path.join(__dirname,'../public'))
 
 const app  = express()
+const port = process.enc.PORT || 3000
+
 // Deinfe paths for express config
 const publicDirectoryPath = path.join(__dirname,'../public')
 const rootDir = __dirname;
@@ -104,8 +106,8 @@ app.get('*',(req,res) =>{
     name: ' Jose',
     error:'Page not found'})
 })
-app.listen(3000, () => {
-    console.log('Server is up and running')
+app.listen(port, () => {
+    console.log('Server is up and running' + port)
 })
 
 // app.get('', (req, res) => {
